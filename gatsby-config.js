@@ -1,6 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: "palp's nostalgic sound library",
+    description: "mi librería personal de nostalgia",
+    autor: "palp",
+    twitter: "@NowherePalp",
+    email: "pablomunozgarcia@outlook.com",
+    siteUrl: "https://palps-nostalgic-sound-library.netlify.app/"
   },
   plugins: [
     "gatsby-plugin-styled-components",
@@ -26,10 +31,10 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "pages",
-        path: "./src/pages/",
+        name: "markdown-pages",
+        path: "./src/markdown-pages/",
       },
-      __key: "pages",
+      __key: "markdown-pages",
     },
   ],
 };
