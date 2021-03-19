@@ -4,7 +4,6 @@ import { Layout, SEO, Header, Tags } from "../components";
 import PostPreview from "../components/post-preview";
 
 const IndexPage = ({ data }) => {
-  console.log(data.allMarkdownRemark.edges);
   return (
     <>
       <SEO title="palp's nostalgic sound library" />
@@ -12,9 +11,7 @@ const IndexPage = ({ data }) => {
         <Header />
         <Tags />
         {data.allMarkdownRemark.edges.map(({ node }) => (
-          <Link to={node.frontmatter.slug}>
-            <PostPreview {...node.frontmatter} />
-          </Link>
+          <PostPreview {...node.frontmatter} key={node.frontmatter.slug} />
         ))}
       </Layout>
     </>
@@ -34,7 +31,6 @@ export const PageQuery = graphql`
             cover
             slug
           }
-          excerpt
         }
       }
     }

@@ -9,7 +9,7 @@ const Wrapper = styled.main`
   padding: 0 1em;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
 `;
 
 const Layout = ({ children }) => {

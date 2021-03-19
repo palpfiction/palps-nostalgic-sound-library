@@ -1,4 +1,5 @@
 import "fontsource-crimson-pro";
+import "fontsource-inter";
 
 import { createGlobalStyle } from "styled-components";
 
@@ -13,12 +14,14 @@ const GlobalStyles = createGlobalStyle`
         --grey: hsl(0, 0%, 47%);
         --white: hsl(0, 0%, 99%);
         --primary: hsl(341, 100%, 31%);
+        --serif: 'Crimson Pro', 'Times New Roman', Times, serif;
+        --sans-serif: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 
     body {
         background-color: var(--white);
         color: var(--black);
-        font-family: 'Crimson Pro', 'Times New Roman', Times, serif;
+        font-family: var(--serif) ;
         font-size: 20px;
         height: 100%;
         width: 100%;
@@ -35,8 +38,7 @@ const GlobalStyles = createGlobalStyle`
 
     a {
         color: var(--black);
-        font-style: italic;
-        text-decoration: underline var(--primary);    
+        text-decoration: unset;   // TODO: improve underlining 
      }
 
     a:visited {

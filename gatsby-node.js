@@ -37,7 +37,6 @@ const createEntries = async (createPage, graphql, reporter) => {
       path: node.frontmatter.slug,
       component: entryTemplate,
       context: {
-        // additional data can be passed via context
         slug: node.frontmatter.slug,
       },
     });

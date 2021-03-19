@@ -7,7 +7,8 @@ const TagList = styled.ul`
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  padding: 0 1em;
+  margin: 0 auto;
+  padding: 2em 1em;
   width: 100%;
 
   @media screen and (min-width: 720px) {
