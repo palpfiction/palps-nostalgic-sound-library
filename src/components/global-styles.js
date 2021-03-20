@@ -18,14 +18,16 @@ const GlobalStyles = createGlobalStyle`
         --sans-serif: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 
+    html, body, #___gatsby, #gatsby-focus-wrapper {
+        height: 100%;
+        margin: 0;
+    }
+
     body {
         background-color: var(--white);
         color: var(--black);
         font-family: var(--serif) ;
         font-size: 20px;
-        height: 100%;
-        width: 100%;
-        line-height: 1;
         margin: 0 auto;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;

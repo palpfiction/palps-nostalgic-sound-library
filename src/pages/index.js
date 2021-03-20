@@ -1,4 +1,4 @@
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import * as React from "react";
 import { Layout, SEO, Header, Tags } from "../components";
 import PostPreview from "../components/post-preview";

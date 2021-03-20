@@ -2,21 +2,30 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import GlobalStyles from "./global-styles";
+import Footer from "./footer";
 
-const Wrapper = styled.main`
-  margin: 0 auto;
-  max-width: 900px;
-  padding: 0 1em;
+const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  height: 100%;
+`;
+
+const Content = styled.main`
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 0 1em;
+  flex: 1;
 `;
 
 const Layout = ({ children }) => {
   return (
     <>
       <GlobalStyles />
-      <Wrapper>{children}</Wrapper>
+      <Container>
+        <Content>{children}</Content>
+        <Footer />
+      </Container>
     </>
   );
 };
