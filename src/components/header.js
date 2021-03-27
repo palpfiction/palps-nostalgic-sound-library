@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import "fontsource-inter/900.css";
+import { Link } from "gatsby";
 
 const HeaderStyle = styled.h1`
   font-family: var(--sans-serif);
@@ -17,7 +18,11 @@ const HeaderStyle = styled.h1`
 `;
 
 const Header = () => {
-  return <HeaderStyle>palp's nostalgic sound library</HeaderStyle>;
+  return (
+    <HeaderStyle>
+      <Link to="/">palp's nostalgic sound library</Link>
+    </HeaderStyle>
+  );
 };
 
 export default Header;

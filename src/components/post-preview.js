@@ -2,9 +2,10 @@ import { Link } from "gatsby";
 import React from "react";
 import styled from "styled-components";
 
-const Wrapper = styled.div`
-  margin-bottom: 1em;
+const Container = styled.div`
+  margin-bottom: 3em;
 `;
+
 const Title = styled.h1`
   font-family: var(--sans-serif);
   margin-top: 0.2em;
@@ -29,9 +30,13 @@ const Separator = styled.span`
   padding: 0 0.3em;
 `;
 
+const Excerpt = styled.p`
+  color: var(--grey);
+`;
+
 const PostPreview = (props) => {
   return (
-    <Wrapper>
+    <Container>
       <Header>
         <Date>{props.date}</Date>
         <Separator>·</Separator>
@@ -40,7 +45,8 @@ const PostPreview = (props) => {
       <Link to={props.slug}>
         <Title>{props.title}</Title>
       </Link>
-    </Wrapper>
+      <Excerpt>{props.excerpt}</Excerpt>
+    </Container>
   );
 };
 

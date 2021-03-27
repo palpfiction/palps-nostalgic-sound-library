@@ -11,7 +11,11 @@ const IndexPage = ({ data }) => {
         <Header />
         <Tags />
         {data.allMarkdownRemark.edges.map(({ node }) => (
-          <PostPreview {...node.frontmatter} key={node.frontmatter.slug} />
+          <PostPreview
+            {...node.frontmatter}
+            excerpt={node.excerpt}
+            key={node.frontmatter.slug}
+          />
         ))}
       </Layout>
     </>
@@ -31,6 +35,7 @@ export const PageQuery = graphql`
             cover
             slug
           }
+          excerpt(pruneLength: 300)
         }
       }
     }
