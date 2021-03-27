@@ -14,6 +14,7 @@ const Container = styled.div`
 const Content = styled.main`
   margin: 0 auto;
   max-width: 900px;
+  width: 100%;
   padding: 0 1em;
   flex: 1;
 `;

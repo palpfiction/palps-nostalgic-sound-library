@@ -53,6 +53,10 @@ const GlobalStyles = createGlobalStyle`
         color: var(--primary);
     }
 
+    img {
+        border-radius: 6px;
+    }
+
    /* a:hover {
         text-decoration: unset;
         background: linear-gradient(180deg, rgba(255,255,255,0) 70%, rgba(158, 0, 49, .3) 30%);

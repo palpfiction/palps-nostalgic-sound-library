@@ -35,7 +35,7 @@ export const pageQuery = graphql`
         node {
           html
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "MMMM DD, YYYY", locale: "es")
             slug
             title
             tag

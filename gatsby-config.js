@@ -5,7 +5,7 @@ module.exports = {
     autor: "palp",
     twitter: "@NowherePalp",
     email: "pablomunozgarcia@outlook.com",
-    siteUrl: "https://palps-nostalgic-sound-library.netlify.app/"
+    siteUrl: "https://palps-nostalgic-sound-library.netlify.app/",
   },
   plugins: [
     "gatsby-plugin-styled-components",
@@ -17,7 +17,12 @@ module.exports = {
         icon: "src/images/icon.png",
       },
     },
-    "gatsby-transformer-remark",
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        excerpt_separator: `<!-- end -->`,
+      },
+    },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
@@ -35,6 +40,20 @@ module.exports = {
         path: "./src/markdown-pages/",
       },
       __key: "markdown-pages",
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 700,
+              linkImagesToOriginal: false,
+            },
+          },
+        ],
+      },
     },
   ],
 };

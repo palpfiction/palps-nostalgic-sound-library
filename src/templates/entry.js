@@ -43,6 +43,18 @@ const EntryContent = styled.div`
       text-transform: capitalize;
     }
   }
+
+  blockquote {
+    color: var(--grey);
+
+    p:first-of-type {
+      ::first-letter {
+        color: inherit;
+        font-size: inherit;
+        text-transform: inherit;
+      }
+    }
+  }
 `;
 
 const Entry = ({ data }) => {
@@ -77,7 +89,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "MMMM DD, YYYY", locale: "es")
         slug
         title
         tag
