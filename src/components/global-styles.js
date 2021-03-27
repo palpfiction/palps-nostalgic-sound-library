@@ -47,8 +47,6 @@ const GlobalStyles = createGlobalStyle`
     }
 
     a:hover {
-        
-        color: var(--black);
         text-decoration: unset;
         background: linear-gradient(180deg, rgba(255,255,255,0) 70%, rgba(158, 0, 49, .3) 30%);
         display: inline;
@@ -57,6 +55,10 @@ const GlobalStyles = createGlobalStyle`
     .underline {
         background: linear-gradient(180deg, rgba(255,255,255,0) 70%, rgba(158, 0, 49, .3) 30%);
         display: inline;
+    }
+
+    .end-mark {
+        color: var(--primary);
     }
 `;
 

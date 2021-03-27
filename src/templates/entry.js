@@ -38,6 +38,7 @@ const EntryContent = styled.div`
 
   p:first-of-type {
     ::first-letter {
+      color: var(--primary);
       font-size: 3em;
       text-transform: capitalize;
     }

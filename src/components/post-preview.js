@@ -1,6 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
 import styled from "styled-components";
+import { slugify } from "../utils/slugify";
 
 const Container = styled.div`
   margin-bottom: 3em;
@@ -40,11 +41,15 @@ const PostPreview = (props) => {
       <Header>
         <Date>{props.date}</Date>
         <Separator>·</Separator>
-        <Tag>{props.tag}</Tag>
+        <Tag>
+          <Link to={`/tags/${slugify(props.tag)}`}>{props.tag}</Link>
+        </Tag>
       </Header>
-      <Link to={props.slug}>
-        <Title>{props.title}</Title>
-      </Link>
+
+      <Title>
+        <Link to={props.slug}>{props.title}</Link>
+      </Title>
+
       <Excerpt>{props.excerpt}</Excerpt>
     </Container>
   );
