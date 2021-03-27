@@ -15,6 +15,17 @@ const HeaderStyle = styled.h1`
   @media screen and (min-width: 720px) {
     font-size: 2em;
   }
+
+  a,
+  a:visited {
+    color: var(--black);
+    transition: all 0.5s ease-in-out;
+  }
+
+  a:hover,
+  a:visited:hover {
+    color: var(--primary);
+  }
 `;
 
 const Header = () => {

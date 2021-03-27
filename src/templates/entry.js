@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { graphql } from "gatsby";
-import { Layout, Header, SEO } from "../components";
+import { Layout, Header, SEO, Tag } from "../components";
 
 const Container = styled.div`
   margin: 1em auto;
@@ -17,7 +17,7 @@ const Date = styled.span`
   color: var(--grey);
 `;
 
-const Tag = styled.span`
+const TagStyle = styled.span`
   font-style: italic;
   color: var(--primary);
 `;
@@ -58,7 +58,9 @@ const Entry = ({ data }) => {
           <EntryHeader>
             <Date>{frontmatter.date}</Date>
             <Separator>·</Separator>
-            <Tag>{frontmatter.tag}</Tag>
+            <TagStyle>
+              <Tag tag={frontmatter.tag}></Tag>
+            </TagStyle>
           </EntryHeader>
           <Title>{frontmatter.title}</Title>
           <EntryContent

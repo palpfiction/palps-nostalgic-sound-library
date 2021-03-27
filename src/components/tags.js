@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useStaticQuery, graphql, Link } from "gatsby";
-import { slugify } from "../utils/slugify";
+import { Tag } from "../components";
 
 const TagList = styled.ul`
   list-style-type: none;
@@ -30,7 +30,7 @@ const Tags = () => {
     <TagList>
       {data.allMarkdownRemark.group.map((tag) => (
         <li key={tag.fieldValue}>
-          <Link to={`/tags/${slugify(tag.fieldValue)}`}>{tag.fieldValue}</Link>
+          <Tag tag={tag.fieldValue} />
         </li>
       ))}
     </TagList>

@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
 import styled from "styled-components";
-import { slugify } from "../utils/slugify";
+import { Tag } from "../components";
 
 const Container = styled.div`
   margin-bottom: 3em;
@@ -10,6 +10,17 @@ const Container = styled.div`
 const Title = styled.h1`
   font-family: var(--sans-serif);
   margin-top: 0.2em;
+
+  a,
+  a:visited {
+    color: var(--black);
+    transition: all 0.2s ease-in-out;
+  }
+
+  a:hover,
+  a:visited:hover {
+    color: var(--primary);
+  }
 `;
 
 const Header = styled.div`
@@ -22,7 +33,7 @@ const Date = styled.span`
   color: var(--grey);
 `;
 
-const Tag = styled.span`
+const TagStyle = styled.span`
   font-style: italic;
   color: var(--primary);
 `;
@@ -41,9 +52,9 @@ const PostPreview = (props) => {
       <Header>
         <Date>{props.date}</Date>
         <Separator>·</Separator>
-        <Tag>
-          <Link to={`/tags/${slugify(props.tag)}`}>{props.tag}</Link>
-        </Tag>
+        <TagStyle>
+          <Tag tag={props.tag} />
+        </TagStyle>
       </Header>
 
       <Title>

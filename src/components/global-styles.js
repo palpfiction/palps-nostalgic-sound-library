@@ -39,18 +39,24 @@ const GlobalStyles = createGlobalStyle`
     }
 
     a {
-       text-decoration: unset; 
+       text-decoration: unset;
+       color: var(--primary);
+
+    }
+
+    a:hover, a:visited:hover {
+        color: var(--black);
     }
 
     a:visited {
-        color: unset;
+        color: var(--primary);
     }
 
-    a:hover {
+   /* a:hover {
         text-decoration: unset;
         background: linear-gradient(180deg, rgba(255,255,255,0) 70%, rgba(158, 0, 49, .3) 30%);
         display: inline;
-    }
+    }*/
 
     .underline {
         background: linear-gradient(180deg, rgba(255,255,255,0) 70%, rgba(158, 0, 49, .3) 30%);
