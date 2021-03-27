@@ -6,7 +6,8 @@ import { Tag } from "../components";
 const TagList = styled.ul`
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   margin: 0 auto;
   padding: 2em 1em;
   width: 100%;
@@ -15,7 +16,21 @@ const TagList = styled.ul`
     max-width: 600px;
   }
 `;
-const Tags = () => {
+
+const TagStyle = styled.li`
+  margin: 0.5em;
+  a,
+  a:visited {
+    ${({ active }) =>
+      active &&
+      `
+    color: var(--grey);
+    pointer-events: none;
+  `}
+  }
+`;
+
+const Tags = ({ active }) => {
   const data = useStaticQuery(graphql`
     query TagsQuery {
       allMarkdownRemark {
@@ -29,9 +44,10 @@ const Tags = () => {
   return (
     <TagList>
       {data.allMarkdownRemark.group.map((tag) => (
-        <li key={tag.fieldValue}>
+        <TagStyle active={active === tag.fieldValue} key={tag.fieldValue}>
+          {active === tag.fieldValue}
           <Tag tag={tag.fieldValue} />
-        </li>
+        </TagStyle>
       ))}
     </TagList>
   );

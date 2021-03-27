@@ -1,15 +1,26 @@
 import React from "react";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
+import { Layout, SEO, Header, Tags, PostPreview } from "../components";
 
-const TagPage = ({ data }) => {
+const TagPage = ({ data, pageContext }) => {
   const posts = data.allMarkdownRemark.edges;
-  const postLinks = posts.map((post) => (
-    <li key={post.node.frontmatter.slug}>
-      <Link to={post.node.frontmatter.slug}>{post.node.frontmatter.title}</Link>
-    </li>
-  ));
 
-  return postLinks;
+  return (
+    <>
+      <SEO title="Tags" />
+      <Layout>
+        <Header />
+        <Tags active={pageContext.tag} />
+        {posts.map((post) => (
+          <PostPreview
+            {...post.node.frontmatter}
+            excerpt={post.node.excerpt}
+            key={post.node.frontmatter.slug}
+          />
+        ))}
+      </Layout>
+    </>
+  );
 };
 
 export const pageQuery = graphql`
@@ -29,6 +40,7 @@ export const pageQuery = graphql`
             title
             tag
           }
+          excerpt(pruneLength: 300)
         }
       }
     }

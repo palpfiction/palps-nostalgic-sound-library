@@ -41,6 +41,7 @@ const GlobalStyles = createGlobalStyle`
     a {
        text-decoration: unset;
        color: var(--primary);
+       transition: all 0.2s ease-in-out;
 
     }
 
