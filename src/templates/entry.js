@@ -84,14 +84,17 @@ const Entry = ({ data }) => {
             </TagStyle>
           </EntryHeader>
           <Title>{frontmatter.title}</Title>
-          <GatsbyImage
-            image={cover}
-            alt={frontmatter.title}
-            css={`
-              margin: 0 auto;
-              border-radius: 6px;
-            `}
-          />
+          {cover ? (
+            <GatsbyImage
+              image={cover}
+              alt={frontmatter.title}
+              css={`
+                margin: 0 auto;
+                border-radius: 6px;
+              `}
+            />
+          ) : null}
+
           <EntryContent
             dangerouslySetInnerHTML={{ __html: html }}
           ></EntryContent>

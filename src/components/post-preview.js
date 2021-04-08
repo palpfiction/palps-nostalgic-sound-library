@@ -66,15 +66,17 @@ const PostPreview = (props) => {
 
   return (
     <Container>
-      <GatsbyImage
-        image={cover}
-        alt={props.title}
-        objectFit={"contain"}
-        css={`
-          flex: 1 1 25%;
-          margin-right: 1.5em;
-        `}
-      />
+      {cover ? (
+        <GatsbyImage
+          image={cover}
+          alt={props.title}
+          objectFit={"contain"}
+          css={`
+            flex: 1 1 25%;
+            margin-right: 1.5em;
+          `}
+        />
+      ) : null}
       <BodyContainer>
         <Header>
           <Date>{props.date}</Date>
