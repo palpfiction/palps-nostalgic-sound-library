@@ -2,12 +2,9 @@
 title: "DJ Dedo Roto Sessions: stop overthinking"
 date: 2016-11-11
 tag: Mixtapes
+cover: stop-overthinking.png
 slug: /dj-dedo-roto-sessions-stop-overthinking
 ---
-
-<div align="center">
-  <img style="width: 250px" src="https://thumbnailer.mixcloud.com/unsafe/300x300/extaudio/b/9/0/6/380f-827e-4f52-8583-e523bef758eb" alt="DJ Dedo Roto Sessions: stop overthinking">
-</div>
 
 > Cuántas veces lo intenté, y no sirvió de nada…
 
@@ -15,4 +12,4 @@ Llevaba casi un mes intentando hacer una sesión que llevara los mejores temas q
 
 Al final, cansado de todo, anoche dejé de pensar. Abrí el traktor, le di al rec y puse la primera canción que vi. Y las cosas no fueron mal. Una colección de canciones en su mayoría tranquilas que me encanta, porque no es lo que suelo pinchar. No es el tipo de canciones que suelen llevar las sesión de pop-rock alternativo. **Beach House**, **Wilco**, **Kings Of Convenience**, **Younghusband**… Está muy lejos de la perfección, pero a mí me gusta, que es lo importante. Ojalá os guste a vosotros también.
 
-<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&hide_artwork=1&feed=%2Fdjdedoroto%2Funtitled%2F" frameborder="0" ></iframe>
+<iframe width="100%" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&hide_artwork=1&feed=%2Fdjdedoroto%2Funtitled%2F" frameborder="0" ></iframe>

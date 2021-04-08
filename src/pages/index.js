@@ -32,8 +32,19 @@ export const PageQuery = graphql`
             title
             date(formatString: "MMMM DD, YYYY", locale: "es")
             tag
-            cover
             slug
+            cover {
+              childImageSharp {
+                gatsbyImageData(
+                  height: 250
+                  width: 250
+                  layout: CONSTRAINED
+                  placeholder: BLURRED
+                  quality: 80
+                  transformOptions: { fit: INSIDE }
+                )
+              }
+            }
           }
           excerpt(pruneLength: 300)
         }

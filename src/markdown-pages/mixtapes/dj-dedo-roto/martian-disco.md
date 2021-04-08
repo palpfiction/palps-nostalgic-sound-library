@@ -2,12 +2,9 @@
 title: "DJ Dedo Roto Sessions: martian disco"
 date: 2017-06-28
 tag: Mixtapes
+cover: martian-disco.jpg
 slug: /dj-dedo-roto-sessions-martian-disco
 ---
-
-<div align="center">
-  <img  src="https://thumbnailer.mixcloud.com/unsafe/500x500/extaudio/a/b/0/1/7a03-3f6c-477a-85a4-1b1339c9cf6b" alt="DJ Dedo Roto Sessions: martian disco ">
-</div>
 
 > ¿Qué música escucharán los alienígenas?
 

@@ -2,12 +2,9 @@
 title: "DJ Dedo Roto Sessions: SOS 4.8 Mixtape – TalentoSOS 2016"
 date: 2016-03-05
 tag: Mixtapes
+cover: sos48.png
 slug: /dj-dedo-roto-sessions-sos-48
 ---
-
-<div align="center">
-  <img style="width: 250px" src="https://thumbnailer.mixcloud.com/unsafe/300x300/extaudio/1/0/8/5/836d-496a-46a0-8810-a116270a629f.png" alt="DJ Dedo Roto Sessions: Take it easy">
-</div>
 
 Este año el festival SOS 4.8 ha añadido una categoría de DJs a su clásico concurso de talentos, con el que se puede llegar a tocar (en mi caso, pinchar) en el festival, codeándose con los grandes grupos que tocan en el festival.
 
@@ -17,6 +14,6 @@ Además de ser una sesión para el concurso, me gustaría que también fuera un 
 
 Espero que disfrutéis de la sesión y que me votéis si os gustaría verme en la cabina del SOS 4.8.
 
-<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&hide_artwork=1&feed=%2Fdjdedoroto%2Fsos-48-mixtape%2F" frameborder="0" ></iframe>
+<iframe width="100%" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&hide_artwork=1&feed=%2Fdjdedoroto%2Fsos-48-mixtape%2F" frameborder="0" ></iframe>
 
 _Al final no quedé finalista._

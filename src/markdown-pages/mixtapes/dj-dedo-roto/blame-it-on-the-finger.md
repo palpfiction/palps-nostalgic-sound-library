@@ -2,18 +2,15 @@
 title: "DJ Dedo Roto Sessions: Blame it on the finger"
 date: 2015-04-24
 tag: Mixtapes
+cover: blame-it-on-the-finger.jpg
 slug: /dj-dedo-roto-sessions-blame-it-on-the-finger
 ---
-
-<div align="center">
-  <img style="width: 250px" src="https://thumbnailer.mixcloud.com/unsafe/300x300/extaudio/7/e/5/1/74e1-ec85-4ee3-bfbf-758e631b8e8c.jpg" alt="DJ Dedo Roto Sessions: Blame it on the finger">
-</div>
 
 Sesión que presenté al concurso #MagmaCmonDJ.
 
 <!-- end -->
 
-<iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&hide_artwork=1&feed=%2Fdjdedoroto%2Fblame-it-on-the-finger%2F" frameborder="0" ></iframe>
+<iframe width="100%" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&hide_artwork=1&feed=%2Fdjdedoroto%2Fblame-it-on-the-finger%2F" frameborder="0" ></iframe>
 
 A partir de aquí encontrarás algo sobre la sesión y sobre mí.
 
@@ -24,7 +21,7 @@ Con estas líneas presenté a DJ Dedo Roto a un concurso que realizaron la Revis
 Ya terminada la sesión, faltaba algo. Ese algo era el nombre. No soy una persona creativa, y necesité de mucha gente para encontrar este nombre. El brainstorming fue la herramienta que me ayudó. Estuve intercambiando títulos con mi hermana, pero nada salió de ahí. Para despejarme, bajaba a comprar el pan (un trayecto de 4 minutos) pero con mis auriculares. El aleatorio me “regaló” el Can’t stand me now de los Libertines. Estas líneas me llamaron la atención:
 
 > No, you’ve got it the wrong way round
-
+>
 > You shut me up, and blamed it on the brown
 
 Blame it on the finger sonó en mi cabeza. Lo tenía. La culpa era del dedo. Él tiene la culpa de que yo quiera ser DJ.

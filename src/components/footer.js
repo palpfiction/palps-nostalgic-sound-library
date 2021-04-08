@@ -8,15 +8,20 @@ const Container = styled.footer`
   text-align: center;
   flex-shrink: 0;
   padding: 1em 0;
-  a {
-    color: var(--grey); // TODO: improve
-  }
 `;
 
 const Footer = () => {
   return (
     <Container>
-      written with love by <a href="twitter.com/nowherepalp">palp</a>
+      <p>
+        written with ♥ by <a href="twitter.com/nowherepalp">palp</a>
+      </p>
+      <p>
+        source code available on{" "}
+        <a href="https://github.com/palpfiction/palps-nostalgic-sound-library">
+          github
+        </a>
+      </p>
     </Container>
   );
 };

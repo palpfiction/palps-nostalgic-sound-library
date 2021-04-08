@@ -57,6 +57,12 @@ const GlobalStyles = createGlobalStyle`
         border-radius: 6px;
     }
 
+    blockquote {
+       border-left: 0.2em solid var(--primary);
+       font-style: italic;
+       padding-left: 1em;
+    }
+
    /* a:hover {
         text-decoration: unset;
         background: linear-gradient(180deg, rgba(255,255,255,0) 70%, rgba(158, 0, 49, .3) 30%);

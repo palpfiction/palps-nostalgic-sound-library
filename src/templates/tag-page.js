@@ -39,6 +39,18 @@ export const pageQuery = graphql`
             slug
             title
             tag
+            cover {
+              childImageSharp {
+                gatsbyImageData(
+                  height: 250
+                  width: 250
+                  layout: CONSTRAINED
+                  placeholder: BLURRED
+                  quality: 80
+                  transformOptions: { fit: INSIDE }
+                )
+              }
+            }
           }
           excerpt(pruneLength: 300)
         }

@@ -1,10 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 import { graphql } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { Layout, Header, SEO, Tag } from "../components";
 
 const Container = styled.div`
   margin: 1em auto;
+  display: flex;
+  flex-direction: column;
+
+  iframe {
+    margin-top: 2em;
+  }
 `;
 
 const EntryHeader = styled.div`
@@ -35,6 +42,7 @@ const EntryContent = styled.div`
   line-height: 1.5em;
   margin: 0 auto;
   max-width: 700px;
+  width: 100%;
 
   p:first-of-type {
     ::first-letter {
@@ -60,6 +68,7 @@ const EntryContent = styled.div`
 const Entry = ({ data }) => {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
+  const cover = getImage(frontmatter.cover);
 
   return (
     <>
@@ -75,6 +84,14 @@ const Entry = ({ data }) => {
             </TagStyle>
           </EntryHeader>
           <Title>{frontmatter.title}</Title>
+          <GatsbyImage
+            image={cover}
+            alt={frontmatter.title}
+            css={`
+              margin: 0 auto;
+              border-radius: 6px;
+            `}
+          />
           <EntryContent
             dangerouslySetInnerHTML={{ __html: html }}
           ></EntryContent>
@@ -93,6 +110,17 @@ export const pageQuery = graphql`
         slug
         title
         tag
+        cover {
+          childImageSharp {
+            gatsbyImageData(
+              width: 400
+              aspectRatio: 1
+              layout: CONSTRAINED
+              placeholder: BLURRED
+              quality: 80
+            )
+          }
+        }
       }
     }
   }

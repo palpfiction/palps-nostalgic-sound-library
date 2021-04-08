@@ -7,6 +7,17 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   await createTags(createPage, graphql, reporter);
 };
 
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions;
+  const typeDefs = [
+    `type MarkdownRemark implements Node { frontmatter: Frontmatter }`,
+    `type Frontmatter {
+      cover: File @link(by: "relativePath")
+    }`,
+  ];
+  createTypes(typeDefs);
+};
+
 const createEntries = async (createPage, graphql, reporter) => {
   const entryTemplate = require.resolve(`./src/templates/entry.js`);
 

@@ -2,13 +2,9 @@
 title: Ana Frango Elétrico - Little Electric Chicken Heart
 date: 2019-12-30
 tag: New Listen
-cover: https://ia801002.us.archive.org/3/items/mbid-f0f81733-1b87-47fd-9153-6eabd9261027/mbid-f0f81733-1b87-47fd-9153-6eabd9261027-24089595609_thumb250.jpg
+cover: ana-frango.jpg
 slug: /little-electric-chicken-heart
 ---
-
-<div align="center">
-  <img src="https://ia801002.us.archive.org/3/items/mbid-f0f81733-1b87-47fd-9153-6eabd9261027/mbid-f0f81733-1b87-47fd-9153-6eabd9261027-24089595609_thumb250.jpg" alt="ana frango elétrico - little electric chicken heart">
-</div>
 
 Hace unas semanas leía por encima la lista de mejores discos del año que había preparado [Anthony Fantano](https://www.youtube.com/watch?v=q8wm4QFCqhE) con el fin de encontrar algo nuevo que llevarme a los oídos. Paré en seco cuando leí “Ana Frango Elétrico”. **Frango**, una palabra que no leía desde el verano de 2017, cuando paseábamos por un supermercado de Paredes de Coura buscando algo que cocinar en el camping gas. Lo dejé escrito en Telegram para cuando consiguiera sacar un rato y seguí con mi vida.
 

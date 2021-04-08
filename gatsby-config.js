@@ -8,6 +8,23 @@ module.exports = {
     siteUrl: "https://palps-nostalgic-sound-library.netlify.app/",
   },
   plugins: [
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        excerpt_separator: `<!-- end -->`,
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 700,
+              linkImagesToOriginal: false,
+            },
+          },
+        ],
+      },
+    },
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
@@ -17,14 +34,6 @@ module.exports = {
         icon: "src/images/icon.png",
       },
     },
-    {
-      resolve: "gatsby-transformer-remark",
-      options: {
-        excerpt_separator: `<!-- end -->`,
-      },
-    },
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -40,20 +49,6 @@ module.exports = {
         path: "./src/markdown-pages/",
       },
       __key: "markdown-pages",
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 700,
-              linkImagesToOriginal: false,
-            },
-          },
-        ],
-      },
     },
   ],
 };

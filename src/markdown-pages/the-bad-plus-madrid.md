@@ -2,6 +2,7 @@
 title: The Bad Plus en Madrid
 date: 2019-11-30
 tag: Conciertos
+cover: bad-plus.jpg
 slug: /the-bad-plus-madrid
 ---
 
