@@ -6,7 +6,7 @@ import PostPreview from "../components/post-preview";
 const IndexPage = ({ data }) => {
   return (
     <>
-      <SEO />
+      <SEO title="home" />
       <Layout>
         <Header />
         <Tags />

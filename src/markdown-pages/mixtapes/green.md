@@ -2,7 +2,7 @@
 title: "GREEN"
 date: 2021-04-10
 tag: Mixtapes
-cover: green.png
+cover: GREEN.png
 slug: /green
 ---
 
