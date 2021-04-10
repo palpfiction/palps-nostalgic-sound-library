@@ -2,6 +2,8 @@
   palp's nostalgic sound library
 </h1>
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dbbb8cd4-2624-4fd7-b567-11aa55abab09/deploy-status)](https://app.netlify.com/sites/palpsnostalgicsoundlibrary/deploys)
+
 My personal nostalgia library. Developed from scratch with Gatsby 3. It is a very simple static website which could be useful to start tinkering with Gatsby (which has been nothing but bliss so far).
 
 The blog pages are generated from markdown documents thanks to the `gatsby-transformer-remark` plugin. The `.md` files feature a small YAML code at the beginning describing each entry's metadata, which Gatsby then converts to GraphQL fields, allowing us to set a date, title or even tags in the files and then using them with no fuss in our React components.
