@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <Container>
       <p>
-        written with ♥ by <a href="twitter.com/nowherepalp">palp</a>
+        written with ♥ by <a href="https://twitter.com/nowherepalp">palp</a>
       </p>
       <p>
         source code available on{" "}

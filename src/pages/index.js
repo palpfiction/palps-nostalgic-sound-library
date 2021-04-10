@@ -6,7 +6,7 @@ import PostPreview from "../components/post-preview";
 const IndexPage = ({ data }) => {
   return (
     <>
-      <SEO title="palp's nostalgic sound library" />
+      <SEO />
       <Layout>
         <Header />
         <Tags />
