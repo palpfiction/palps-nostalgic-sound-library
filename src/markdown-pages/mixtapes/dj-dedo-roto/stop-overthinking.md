@@ -12,4 +12,4 @@ Llevaba casi un mes intentando hacer una sesión que llevara los mejores temas q
 
 Al final, cansado de todo, anoche dejé de pensar. Abrí el traktor, le di al rec y puse la primera canción que vi. Y las cosas no fueron mal. Una colección de canciones en su mayoría tranquilas que me encanta, porque no es lo que suelo pinchar. No es el tipo de canciones que suelen llevar las sesión de pop-rock alternativo. **Beach House**, **Wilco**, **Kings Of Convenience**, **Younghusband**… Está muy lejos de la perfección, pero a mí me gusta, que es lo importante. Ojalá os guste a vosotros también.
 
-<iframe width="100%" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&hide_artwork=1&feed=%2Fdjdedoroto%2Funtitled%2F" frameborder="0" ></iframe>
+<iframe width="100%" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&hide_artwork=1&feed=%2Fdjdedoroto%2Fstop-overthinking%2F" frameborder="0" ></iframe>
